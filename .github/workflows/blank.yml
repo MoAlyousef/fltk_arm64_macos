@@ -17,4 +17,4 @@ jobs:
       run: |
         git clone https://github.com/fltk/fltk --depth=1
         cd fltk
-        cmake -Bbin -S. -GNinja -DCMAKE_OSX_ARCHITECTURES=arm64 -DFLTK_BUILD_EXAMPLES=ON -DFLTK_BUILD_FLUID=OFF -DFLTK_BUILD_TEST=OFF -DFLTK_BUILD_FLTK_OPTIONS=OFF && cmake --build bin
+        cmake -Bbin -S. -DCMAKE_OSX_ARCHITECTURES=arm64 -DFLTK_BUILD_EXAMPLES=ON -DFLTK_BUILD_FLUID=OFF -DFLTK_BUILD_TEST=OFF -DFLTK_BUILD_FLTK_OPTIONS=OFF && cmake --build bin
